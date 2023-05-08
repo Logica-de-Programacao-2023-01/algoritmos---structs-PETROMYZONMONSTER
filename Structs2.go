@@ -14,8 +14,8 @@ type Pessoa struct {
 	Endereco Endereco
 }
 
-func main() {
-	p := Pessoa{
+func EndPes(pessoa Pessoa) Pessoa {
+	return Pessoa{
 		Nome:  "Lucas",
 		Idade: 20,
 		Endereco: Endereco{
@@ -24,5 +24,9 @@ func main() {
 			Estado: "SP",
 		},
 	}
-	fmt.Println(p)
+}
+
+func main() {
+	P := EndPes(Pessoa{})
+	fmt.Print(P)
 }
