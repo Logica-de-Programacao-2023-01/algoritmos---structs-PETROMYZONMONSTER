@@ -4,7 +4,7 @@ import "fmt"
 
 type Endereco struct {
 	Rua    string
-	Numero int
+	Numero float64
 	Estado string
 }
 
@@ -28,5 +28,5 @@ func EndPes(pessoa Pessoa) Pessoa {
 
 func main() {
 	P := EndPes(Pessoa{})
-	fmt.Print(P)
+	fmt.Printf("%s,Número: %g,Estado: %s", P.Endereco.Rua, P.Endereco.Numero, P.Endereco.Estado)
 }
